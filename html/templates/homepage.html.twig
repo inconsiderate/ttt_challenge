@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to Symfony</title>
+</head>
+<body>
+    <h1>TTT Studios - PHP/Symfony Coding Challenge</h1>
+
+    <h2>Volunteers & Applied Positions</h2>
+
+    {% for item in data %}
+        {% if item.applied_jobs|length > 1 %}
+        <p><strong>{{item.full_name}}</strong>: 
+            {% for job in item.applied_jobs %}
+                {{job}}{% if loop.last != true %},{% endif%}
+            {% endfor %}
+        </p>
+        {% endif %}
+    {% endfor %}
+
+    
+</body>
+</html>
