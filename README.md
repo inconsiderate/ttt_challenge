@@ -14,6 +14,7 @@
 # Notes
 In a real world scenario I would ideally make the following additions/changes to this code and infra:
 - auth/access tokens for API routes
+- include a shared Postman collection for additional (and more thorough) API documentation  
 - traefik or other reverse proxy with subdomain to allow this project to run concurrently with other local docker apps
 - adminer (or phpmyadmin) container for quick access to DBs without exposing ports (ideally routed through traefik)
 - frontend service to allow client to easily view and add jobs, volunteers, and relationships
